@@ -253,9 +253,21 @@
 * 網頁介面
   * [OR-Tools](https://developers.google.com/optimization/lp)
   * [online-optimizer](https://online-optimizer.appspot.com/)
+  * [frepple](https://demo.frepple.com/)
 * 開源程式（下列介紹以 python 套件為主）
-  * [scipy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html)（不能解整數規劃）
-  * [pulp](https://coin-or.github.io/pulp/)（可以求解整數、混合整數規劃問題）
+  * [scipy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html)
+    * 不能解整數規劃
+    * 無法對接外部 solver
+  * [pulp](https://coin-or.github.io/pulp/)
+    * 可以求解整數、混合整數規劃問題
+    * 可以對接外部 solver，如：Gurobi、CPLEX、GLPK 等（當然商業軟體還是會有使用上限）
+                                                   
+     solver name| package
+     ---|---
+     Gurobi| `pip install gurobipy`
+     CPLEX| `pip install cplex`
+     GLPK| `pip install install glpk-utils`
+    
 
 ## 參考來源
 * [scipy vs pulp](https://realpython.com/linear-programming-python/)
@@ -263,3 +275,5 @@
 * [線性規劃簡介](https://www.wikiwand.com/zh-hk/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92)
 * [線性最佳化含圖解](https://web.ntnu.edu.tw/~algo/LinearOptimization.html)
 * [線性規劃－內點法](https://blog.csdn.net/dymodi/article/details/46441783)
+* [交大線上課程：作業研究（二）](http://ocw.nctu.edu.tw/course_detail.php?bgid=3&nid=49)
+* [交大線上課程：非線性規劃](http://ocw.nctu.edu.tw/course_detail.php?bgid=3&gid=0&nid=358)
