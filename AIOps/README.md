@@ -20,13 +20,11 @@ AIOps（Artificial Intelligence for IT Operations，智慧維運）
 ## 檔案內容
 內容|檔名
 ----|----
-預賽訓練集|train.csv
-預賽測試集|test.csv
+預賽訓練、測試集|[data set](https://github.com/NetManAIOps/KPI-Anomaly-Detection/tree/master/Preliminary_dataset)
 決賽訓練集|phase2_train.csv
-決賽測試集|phase2_ground_truth.hdf
-使用套件|requirements.txt
-專案主檔|main.py
-function|function.py
+決賽測試集|phase2_ground_truth.hdf（需先解壓縮）
+使用套件|requirements.txt（需先解壓縮）
+專案主檔|implementation.ipynb
 
 ## 參考來源
 * [競賽頁面](http://iops.ai/competition_list/)
