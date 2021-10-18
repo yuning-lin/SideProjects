@@ -7,7 +7,7 @@
 ## 內容
 查詢到在供應鏈管理、運籌學的課程也時有連結，   
 建議以英文查詢欲達成之目標，  
-以下附上網路轉載之表格以利查詢   
+以下附上網路轉載之表格（Beamon, 1998）以利查詢   
 <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" width="0" style="width:735.0pt;border-collapse:collapse;mso-yfti-tbllook:1056;
  mso-padding-alt:0cm 0cm 0cm 0cm">
  <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:17.9pt">
@@ -237,7 +237,7 @@
 
 
 根據有接觸到的子題做程式範例如下：  
-* 基礎整數規劃（類似產品延遲最小化）
+* [基礎整數規劃＋出貨有優先順序](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/pulp_with_preemptive_goal_programming.ipynb)
 * 料件使用有優先順序（替代料件）
 * 共用料件
 
@@ -272,10 +272,14 @@
 ## 參考來源
 * [COIN-OR Mixed Integer Linear Programming with Python](https://buildmedia.readthedocs.org/media/pdf/python-mip/latest/python-mip.pdf)
 * [Python MIP - Developing Customized Branch-&-Cut algorithms](https://docs.python-mip.com/en/latest/custom.html)
-* [scipy vs pulp](https://realpython.com/linear-programming-python/)
+* [scipy v.s. pulp](https://realpython.com/linear-programming-python/)
+* [branch and bound v.s. branch and cut](https://www.cnblogs.com/dengfaheng/p/11344488.html)
+* [Coursera Gomory Cut](https://zh-tw.coursera.org/lecture/lisan-youhua-suanfapian/3-3-3-qie-ge-ping-mian-loPYl)
 * [線性規劃－基礎數學觀念、單形法](https://ccjou.wordpress.com/%e5%b0%88%e9%a1%8c%e6%8e%a2%e7%a9%b6/%e7%b7%9a%e6%80%a7%e8%a6%8f%e5%8a%83%e5%b0%88%e9%a1%8c/)
 * [線性規劃簡介](https://www.wikiwand.com/zh-hk/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92)
 * [線性最佳化含圖解](https://web.ntnu.edu.tw/~algo/LinearOptimization.html)
 * [線性規劃－內點法](https://blog.csdn.net/dymodi/article/details/46441783)
-* [交大線上課程：作業研究（二）](http://ocw.nctu.edu.tw/course_detail.php?bgid=3&nid=49)
+* [交大線上課程：單形法](https://www.youtube.com/watch?v=RTe7_OO17ww&list=PLj6E8qlqmkFufn5avTvkdFDcYA9cnuzcd&index=5)
+* [交大線上課程：整數規劃](https://www.youtube.com/watch?v=G5a8NOIxc8s&list=PLj6E8qlqmkFvyhyY3oCLq2OBIIew52c0b&index=6)
 * [交大線上課程：非線性規劃](http://ocw.nctu.edu.tw/course_detail.php?bgid=3&gid=0&nid=358)
+* [線代啟示錄：多胞形](https://ccjou.wordpress.com/2013/05/20/%E5%A4%9A%E8%83%9E%E5%BD%A2/)
