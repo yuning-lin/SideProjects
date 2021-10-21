@@ -241,10 +241,18 @@
 * 料件使用有優先順序（替代料件）
 * 共用料件
 
-## 線性規劃求解
-求解以下面兩派為大宗，再根據追求求解時間更快等做變形的計算
-* 單形法（simplex method）
-* 內點法（interior method）
+## 線性規劃（linear programming）
+求解以單形法、內點法延伸為大宗，基本上是根據追求求解時間更快等做變形的計算
+方法名稱|計算概念|應用時機
+----|----|----
+[單形法（simplex method）](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Note.md#%E5%96%AE%E5%BD%A2%E6%B3%95simplex-method)|沿著邊界尋找最佳可行角點，若鄰點更好則繼續迭代|解小型線性規劃問題有不錯的表現
+內點法（interior method）|衡量移動的方向及步長，在可行解集合逼近最佳解|解大型、稀疏線性規劃問題效率表現較佳
+橢球法（ellipsoid method）|製造一個涵蓋極值的橢球。依照梯度移動球心、迭代調整橢球形狀並縮小體積，以使球心逐步收斂至極值|實際應用效率不如另兩種方法
+
+## 整數規劃（integer programming）
+其想法來自於：窮舉（太花時間）--> 部分窮舉（分開求解）
+* [分支限界法（branch and bound）](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Note.md#branch-and-bound)
+* [分支切割法（branch and cut）](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Note.md#branch-and-cut)
 
 ## 求解工具
 * 套裝軟體
@@ -272,8 +280,8 @@
 ## 參考來源
 * [COIN-OR Mixed Integer Linear Programming with Python](https://buildmedia.readthedocs.org/media/pdf/python-mip/latest/python-mip.pdf)
 * [Python MIP - Developing Customized Branch-&-Cut algorithms](https://docs.python-mip.com/en/latest/custom.html)
-* [scipy v.s. pulp](https://realpython.com/linear-programming-python/)
-* [branch and bound v.s. branch and cut](https://www.cnblogs.com/dengfaheng/p/11344488.html)
+* [scipy vs pulp](https://realpython.com/linear-programming-python/)
+* [branch and bound vs branch and cut](https://www.cnblogs.com/dengfaheng/p/11344488.html)
 * [Coursera Gomory Cut](https://zh-tw.coursera.org/lecture/lisan-youhua-suanfapian/3-3-3-qie-ge-ping-mian-loPYl)
 * [線性規劃－基礎數學觀念、單形法](https://ccjou.wordpress.com/%e5%b0%88%e9%a1%8c%e6%8e%a2%e7%a9%b6/%e7%b7%9a%e6%80%a7%e8%a6%8f%e5%8a%83%e5%b0%88%e9%a1%8c/)
 * [線性規劃簡介](https://www.wikiwand.com/zh-hk/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92)
