@@ -1,16 +1,4 @@
-## 線性規劃（linear programming）
-方法名稱|計算概念|應用時機
-----|----|----
-單形法（simplex method）|沿著邊界尋找最佳可行角點，若鄰點更好則繼續迭代|解小型線性規劃問題有不錯的表現
-內點法（interior method）|衡量移動的方向及步長，在可行解集合逼近最佳解|解大型、稀疏線性規劃問題效率表現較佳
-橢球法（ellipsoid method）|製造一個涵蓋極值的橢球。依照梯度移動球心、迭代調整橢球形狀並縮小體積，以使球心逐步收斂至極值|實際應用效率不如另兩種方法
-
-## 整數規劃（integer programming）
-其想法來自於：窮舉（太花時間）--> 部分窮舉（分開求解）
-* 分支限界法（branch and bound）
-* 分支切割法（branch and cut）
-
-### 單形法（simplex method）
+## 單形法（simplex method）
 * 線性規劃標準形式＋鬆弛變數（slack variable）--＞增強形式（augmented form）。增強形式才可以用高斯消去法進行求解
   * 線性規劃標準形式：  
     $\max{Z=c_1x_1+...+c_nx_n}$  
@@ -83,7 +71,7 @@
   7. 此時將非基變量，即目標式有出現的變數 $x_2,x_4,x_6$ 代為 0，則求得最佳解為 17，$(x_1, x_2, x_3)=(3,0,2)$
 
 
-### Branch and Bound
+## Branch and Bound
 初始設置： incumbent（到目前為止最佳的解） = -∞  
 1. Branch（何時該切分）
     * 找最後產生之點來分支，若平手則選 bound 較好的
@@ -112,7 +100,7 @@
   
   ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/branch_and_bound_MIP.PNG)
    
-### Branch and Cut
+## Branch and Cut
 現代商用混合整數線性規劃求解器都包含割平面法，但為了計算效率不會單獨被使用  
 通常會結合割平面法、Branch and Bound --> Branch and Cut  
 **割平面法：**  
