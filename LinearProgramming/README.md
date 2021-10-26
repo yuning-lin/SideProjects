@@ -2,7 +2,8 @@
 雖非 ML 領域但於工作過程中接觸到，  
 發現許多物理事件轉換成數學公式的精妙，  
 將花時間學到的線性規劃技巧紀錄於此 folder  
-主要實現工具為 python pulp 套件。
+主要實現工具為 python pulp 套件。  
+首要動作：`pip install pulp`
 
 ## 內容
 查詢到在供應鏈管理、運籌學的課程也時有連結，   
@@ -273,10 +274,22 @@
                                                    
      solver name| package
      ---|---
+     CoinOR|`pip install coinor-cbc`
      Gurobi| `pip install gurobipy`
      CPLEX| `pip install cplex`
-     GLPK| `pip install install glpk-utils`
-    
+     GLPK| `pip install glpk-utils`
+     [SCIP](https://github.com/scipopt/PySCIPOpt)|`pip install pyscipopt`
+  
+* 檢測安裝結果
+```python
+import pulp
+print(pulp.__version__)
+pulpTestAll() # 內建測試功能
+listSolvers() # 列出所有 solver
+listSolvers(onlyAvailable=True) # 列出環境可以使用的 solver
+```
+* [如何使用其他 solver](https://coin-or.github.io/pulp/guides/how_to_configure_solvers.html)
+
 
 ## 參考來源
 * [COIN-OR Mixed Integer Linear Programming with Python](https://buildmedia.readthedocs.org/media/pdf/python-mip/latest/python-mip.pdf)
