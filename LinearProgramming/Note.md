@@ -97,7 +97,13 @@
   ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/branch_and_bound_BIP.PNG)
    
 * Mixed Integer Programming
-  
+  * 只考慮整數變數
+  * 分支變成：$𝑥_{𝑖}≤⌊𝑥_{𝑖}^∗ ⌋,𝑥_{𝑖}≥⌊𝑥_{𝑖}^∗ ⌋+1$
+     * EX：$𝑥_{2}=3.5 → 𝑥_{2}≤3, 𝑥_{2}≥4$
+  * 若只有部分變數限制為整數，則求出的 bound，不能四捨五入
+     * EX： $𝑀𝑎𝑥 𝑍=4𝑥_1−2𝑥_2+7x_3−𝑥_4  \ 𝑤𝑖𝑡ℎ \ 𝑐𝑜𝑛𝑠𝑡𝑟𝑎𝑖𝑛𝑡𝑠 … , \ 
+             𝑥_𝑖≥0, 𝑖=1,…,4 \  𝑎𝑛𝑑 \  𝑥_1,𝑥_2,𝑥_3 ∈ 𝑖𝑛𝑡𝑒𝑔𝑒𝑟 $
+
   ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/branch_and_bound_MIP.PNG)
    
 ## Branch and Cut
@@ -118,8 +124,8 @@
 3. 若 𝜃 中整數變量的解非整數，但有機會可以獲得更佳解，則在該節點向 P 添加切割平面至原線性鬆弛問題再求解
 4. 若添加切割平面後 𝜃 中整數變量仍為非整數解，才再繼續分支
 
-**Gomory 切割：**
-以圖片的問題為例：
+**Gomory 切割：不等式求解過程**  
+以圖片的左上問題為例：  
   
   ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/gomory_cut.PNG)
   
@@ -140,8 +146,16 @@
   * 切割移除了原線性鬆弛上的最優解（即移除了非整數的最優解）
   * 保留原混合整數線性規劃的可行解
 
-
-
+**Gomory 切割：二維實例圖解**
+  
+  ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/gomory_cut_2D_example.PNG)
+  
+## 資料來源
+* [Python MIP - Developing Customized Branch-&-Cut algorithms](https://docs.python-mip.com/en/latest/custom.html)
+* [branch and bound vs branch and cut](https://www.cnblogs.com/dengfaheng/p/11344488.html)
+* [Coursera : Gomory Cut](https://zh-tw.coursera.org/lecture/lisan-youhua-suanfapian/3-3-3-qie-ge-ping-mian-loPYl)
+* [Cutting Plane Method and Strong Valid Inequalities](https://ocw.nctu.edu.tw/course/ip002/lecture_IP6.pdf)
+* [Cutting Plane Methods](https://ocw.mit.edu/courses/sloan-school-of-management/15-083j-integer-programming-and-combinatorial-optimization-fall-2009/lecture-notes/MIT15_083JF09_lec17.pdf)
 
 
 
