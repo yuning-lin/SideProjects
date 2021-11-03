@@ -278,7 +278,7 @@
      Gurobi| `pip install gurobipy`
      CPLEX| `pip install cplex`
      GLPK| `pip install glpk-utils`
-     [SCIP](https://github.com/scipopt/PySCIPOpt)|`pip install pyscipopt`
+     [SCIP](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/SCIP.md)|`pip install pyscipopt`
   
 * 檢測安裝結果
 ```python
@@ -290,14 +290,13 @@ listSolvers(onlyAvailable=True) # 列出環境可以使用的 solver
 ```
 * [如何使用其他 solver](https://coin-or.github.io/pulp/guides/how_to_configure_solvers.html)
 
+## 資訊整理
+* [MIP 筆記整理](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Note.md)
+* [SCIP 安裝方法](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/SCIP.md)
 
 ## 參考來源
 * [COIN-OR Mixed Integer Linear Programming with Python](https://buildmedia.readthedocs.org/media/pdf/python-mip/latest/python-mip.pdf)
-* [Python MIP - Developing Customized Branch-&-Cut algorithms](https://docs.python-mip.com/en/latest/custom.html)
 * [scipy vs pulp](https://realpython.com/linear-programming-python/)
-* [branch and bound vs branch and cut](https://www.cnblogs.com/dengfaheng/p/11344488.html)
-* [Coursera Gomory Cut](https://zh-tw.coursera.org/lecture/lisan-youhua-suanfapian/3-3-3-qie-ge-ping-mian-loPYl)
-* [Cutting Plane Method and Strong Valid Inequalities](https://ocw.nctu.edu.tw/course/ip002/lecture_IP6.pdf)
 * [線性規劃－基礎數學觀念、單形法](https://ccjou.wordpress.com/%e5%b0%88%e9%a1%8c%e6%8e%a2%e7%a9%b6/%e7%b7%9a%e6%80%a7%e8%a6%8f%e5%8a%83%e5%b0%88%e9%a1%8c/)
 * [線性規劃簡介](https://www.wikiwand.com/zh-hk/%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92)
 * [線性最佳化含圖解](https://web.ntnu.edu.tw/~algo/LinearOptimization.html)
