@@ -155,7 +155,8 @@
 * [branch and bound vs branch and cut](https://www.cnblogs.com/dengfaheng/p/11344488.html)
 * [Coursera : Gomory Cut](https://zh-tw.coursera.org/lecture/lisan-youhua-suanfapian/3-3-3-qie-ge-ping-mian-loPYl)
 * [Cutting Plane Method and Strong Valid Inequalities](https://ocw.nctu.edu.tw/course/ip002/lecture_IP6.pdf)
-* [Cutting Plane Methods](https://ocw.mit.edu/courses/sloan-school-of-management/15-083j-integer-programming-and-combinatorial-optimization-fall-2009/lecture-notes/MIT15_083JF09_lec17.pdf)
+* [Cutting Plane Methods I by MIT](https://ocw.mit.edu/courses/sloan-school-of-management/15-083j-integer-programming-and-combinatorial-optimization-fall-2009/lecture-notes/MIT15_083JF09_lec17.pdf)
+* [Optimization Methods:Exact Methods for IP by MIT](https://ocw.mit.edu/courses/sloan-school-of-management/15-093j-optimization-methods-fall-2009/lecture-notes/MIT15_093J_F09_lec13.pdf)
 
 
 
