@@ -305,3 +305,4 @@ listSolvers(onlyAvailable=True) # 列出環境可以使用的 solver
 * [交大線上課程：整數規劃](https://www.youtube.com/watch?v=G5a8NOIxc8s&list=PLj6E8qlqmkFvyhyY3oCLq2OBIIew52c0b&index=6)
 * [交大線上課程：非線性規劃](http://ocw.nctu.edu.tw/course_detail.php?bgid=3&gid=0&nid=358)
 * [線代啟示錄：多胞形](https://ccjou.wordpress.com/2013/05/20/%E5%A4%9A%E8%83%9E%E5%BD%A2/)
+* [GOAL PROGRAMMING](http://du.ac.in/du/uploads/departments/Operational%20Research/25042020_Goal%20Programming.pdf)
