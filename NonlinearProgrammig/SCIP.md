@@ -44,6 +44,18 @@ SCIP|SCIPOptSuite-7.0.3-win64-VS15
     
     ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/SCIP_add_path.PNG)
    
+## 儲存格式
+在寫完程式邏輯可以儲存檔案檢查邏輯是否正確  
+```python
+model.writeProblem("model.cip")
+model.readProblem("model.cip")
+
+model.writeProblem("model.lp")
+model.readProblem("model.lp")
+```
+* cip：人類可以閱讀的格式
+* lp：線性規劃模型常用的格式
+
 ## 資料來源
 * [PySCIPOpt](https://github.com/scipopt/PySCIPOpt)
 * [Building SCIP using CMake](https://www.scipopt.org/doc/html/md_INSTALL.php#CMAKE)
