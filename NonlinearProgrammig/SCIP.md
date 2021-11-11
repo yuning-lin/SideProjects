@@ -1,5 +1,7 @@
 ## 文件簡介
-SCIP 相對於其他 solver，在實際安裝過後有問題  
+SCIP 可以用來解決線性規劃、非線性規劃、整數規劃、混合整數規劃  
+且在各個 solver 的比較上，效能、能處理的問題、價格上都相對表現不錯  
+但 SCIP 在實際安裝的過程有碰到一些問題      
 所以在此檔紀錄如何解決的步驟  
 
 ## 軟體版本
@@ -14,7 +16,7 @@ SCIP|SCIPOptSuite-7.0.3-win64-VS15
 2. 填入個人資料始可下載
 3. 雙擊 `SCIPOptSuite-7.0.3-win64-VS15.exe` 以安裝
 4. 新增環境變數：
-    * 直接在搜尋＞系統＞進階系統設定＞環境變數＞系統變數＞path＞新增環境變數 `C:\Program Files\SCIPOptSuite 7.0.3\bin`
+    * 直接在搜尋＞進階系統設定＞環境變數＞系統變數（S）＞path＞新增環境變數 `C:\Program Files\SCIPOptSuite 7.0.3\bin`
     * 在 CMD 激活虛擬環境後，鍵入 `set PATH=%PATH%;%SCIPOPTDIR%\bin` ，用 `echo %PATH%` 確認 PATH 這個變數內有無剛填的路徑
     * 在 git bash 激活虛擬環境後，鍵入 `export SCIPOPTDIR="C:\Program Files\SCIPOptSuite 7.0.3"` ，用 `printenv` 確認 PATH 這個變數內有無剛填的路徑
 6. 重新開機
@@ -34,11 +36,11 @@ SCIP|SCIPOptSuite-7.0.3-win64-VS15
   ```
   src\pyscipopt\scip.c(640): fatal error C1083: \xe7\x84▒▒\xb3\x95\xe9\x96\x8b\xe5\x95\x9f\xe5\x8c\x85\xe5\x90▒▒\xaa\x94▒\x88: 'scip/scip.h': No such file or directory
   ```
-  1. 使用者變數、系統變數的 path 都確認有新增環境變數 `C:\Program Files\SCIPOptSuite 7.0.3\bin`
+  1. XXX的使用者變數、系統變數的 path 都確認有新增環境變數 `C:\Program Files\SCIPOptSuite 7.0.3\bin`
     
     ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/SCIP_add_env_var.PNG)
     
-  2. 使用者變數新增變數名稱：SCIPOPTDIR、變數值：`C:\Program Files\SCIPOptSuite 7.0.3`。即圖中藍底部分。
+  2. XXX的使用者變數新增變數名稱：SCIPOPTDIR、變數值：`C:\Program Files\SCIPOptSuite 7.0.3`。即圖中藍底部分。
     
     ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/SCIP_add_path.PNG)
    
