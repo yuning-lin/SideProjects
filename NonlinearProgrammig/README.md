@@ -20,3 +20,4 @@
 * [Mathematical Optimization](https://scipbook.readthedocs.io/en/latest/intro.html)
 * [PYSCIPOPT: Mathematical Programming in Python with the SCIP Optimization Suite](https://opus4.kobv.de/opus4-zib/files/6134/PySCIPOpt.pdf)
 * [SCIP official site](https://scipopt.org/#scipoptsuite)
+* [SCIP functions](https://scipopt.github.io/PySCIPOpt/docs/html/classpyscipopt_1_1scip_1_1Model.html)
