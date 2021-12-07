@@ -6,7 +6,7 @@
 
 
 ## 常見套包
-1. [GEKKO])(https://gekko.readthedocs.io/en/latest/)
+1. [GEKKO](https://gekko.readthedocs.io/en/latest/)
     * 實際解決問題時碰到運算限制
     * 僅提供簡單的[應用案例](https://github.com/yuning-lin/SideProjects/blob/main/NonlinearProgrammig/nonlinear_programming_gekko_simple.ipynb)
 2. [PySCIPOpt](https://scipopt.github.io/PySCIPOpt/docs/html/)
