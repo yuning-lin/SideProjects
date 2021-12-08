@@ -279,7 +279,11 @@
      CPLEX| `pip install cplex`
      GLPK| `pip install glpk-utils`
      [SCIP](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/SCIP.md)|`pip install pyscipopt`
-  
+  * [PySCIPOpt](https://github.com/scipopt/PySCIPOpt)
+    * 可以求解 MILP、MINLP
+    * Default solver: soplex
+    * SCIP 其他功能需在 LINUX 環境等進行安裝及 compile，無法以 python 完成 
+
 * 檢測安裝結果
 ```python
 import pulp
