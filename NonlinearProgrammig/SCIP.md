@@ -50,11 +50,13 @@ SCIP|SCIPOptSuite-7.0.3-win64-VS15
 model.writeProblem("model.cip")
 model.readProblem("model.cip")
 
-model.writeProblem("model.lp")
+model.writeProblem("model.lp") 
 model.readProblem("model.lp")
 ```
 * cip：人類可以閱讀的格式
 * lp：線性規劃模型常用的格式
+   * 注意：若要存成 .lp，限制式加註解要小心，在讀檔時比較會有問題
+   * EX：model.addCons(a+b>=10, ~~"equation 1"~~)
 
 ## 資料來源
 * [PySCIPOpt](https://github.com/scipopt/PySCIPOpt)
