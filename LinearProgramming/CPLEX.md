@@ -12,8 +12,10 @@
 ## 安裝
 有兩種方式：  
 * 使用 pip：`pip install cplex docplex`
+  * python 版本需為 3.6 或 3.7 才能使用，否則會有 [ERROR: No matching distribution found for cplex](https://stackoverflow.com/questions/62437055/no-matching-distribution-found-for-cplex)
   * 這種安裝方法，用的 CPLEX 有限制變數和限制式數量
 * 使用 IBM Installer
+  * 目前此法 python 能對接的版本為 3.7、3.8
   1. 進入 IBM 官網[建立帳戶](https://www.ibm.com/account/reg/tw-zh/signup?formid=urx-19776&target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D134348ec-7617-4c01-ae40-c6cb1ad729bd%26client_id%3Dv18LoginProdCI)
     
   ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/cplex_log_in_myibm.PNG)
@@ -31,8 +33,9 @@
   
   ![](https://github.com/yuning-lin/SideProjects/blob/main/LinearProgramming/Pictures/cplex_click_download_by_os.PNG)
   
-  5. 下載完後，預設的路徑 yourCPLEXhome\python\VERSION\PLATFORM 下打開終端機並下指令 `python setup.py install`
-* 兩種方法擇一下載後，就可以使用 python 呼叫 docplex 進行 programming 的部分
+  4. 下載完後，預設的路徑 `C:\Program Files\IBM\ILOG\CPLEX_Studio_Community201\python\` 下打開終端機並下指令 `python setup.py install`
+* 兩種方法擇一下載後可以在 python 版本符合的虛擬環境下指令 `python -m docplex.mp.check_list`，以確認安裝成功
+* 接下來就可以使用 python 呼叫 docplex 進行 programming 的部分
 
 ## 更多資源
 * [Cplex Python: Installation, API, and Examples](https://www.pythonpool.com/cplex-python/)
