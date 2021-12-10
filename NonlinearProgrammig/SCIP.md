@@ -58,6 +58,13 @@ model.readProblem("model.lp")
    * 注意：若要存成 .lp，限制式加註解要小心，在讀檔時比較會有問題
    * EX：model.addCons(a+b>=10, ~~"equation 1"~~)
 
+## 黑窗執行
+* 根據上面安裝的步驟完成後，於檔案路徑下打開命令提示字元
+* 輸入小寫 `scip`
+* 讀取欲求解的文件名稱 `read model.cip`，SCIP 支持的格式可見於[此](https://www.scipopt.org/doc-3.1.0/html/FAQ.php)
+* 求解 `optimize`
+* 顯示求解結果 `display solution`
+
 ## 資料來源
 * [PySCIPOpt](https://github.com/scipopt/PySCIPOpt)
 * [Building SCIP using CMake](https://www.scipopt.org/doc/html/md_INSTALL.php#CMAKE)
