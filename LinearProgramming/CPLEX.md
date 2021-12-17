@@ -40,3 +40,5 @@
 ## 更多資源
 * [Cplex Python: Installation, API, and Examples](https://www.pythonpool.com/cplex-python/)
 * [Resource to learn Python](http://ibmdecisionoptimization.github.io/docplex-doc/getting_started_python.html)
+* [Topical list of parameters of CPLEX from perso.ensta](https://perso.ensta-paris.fr/~diam/ro/online/cplex/cplex1271/CPLEX/Parameters/topics/introListTopical.html)
+* [Topical list of parameters of CPLEX from IBM](https://www.ibm.com/docs/en/icos/20.1.0?topic=cplex-topical-list-parameters)
