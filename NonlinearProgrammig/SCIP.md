@@ -59,11 +59,15 @@ model.readProblem("model.lp")
    * EX：model.addCons(a+b>=10, ~~"equation 1"~~)
 
 ## 黑窗執行
-* 根據上面安裝的步驟完成後，於檔案路徑下打開命令提示字元
-* 輸入小寫 `scip`
-* 讀取欲求解的文件名稱 `read model.cip`，SCIP 支持的格式可見於[此](https://www.scipopt.org/doc-3.1.0/html/FAQ.php)
-* 求解 `optimize`
-* 顯示求解結果 `display solution`
+根據上面安裝的步驟完成後，於檔案路徑下打開命令提示字元／BASH  
+
+|語法|意義|
+|----|----|
+|`scip`|進入 SCIP 環境|
+|`read model.cip`|讀取欲求解的文件名稱，SCIP 支持的格式可見於[此](https://www.scipopt.org/doc-3.1.0/html/FAQ.php)|
+|`optimize`|求解|
+|`display solution`|顯示求解結果|
+|`quit`|離開 SCIP 環境|
 
 ## 資料來源
 * [PySCIPOpt](https://github.com/scipopt/PySCIPOpt)
