@@ -28,7 +28,8 @@ pip install uvicorn[standard]  # This will install uvicorn with minimal (pure Py
    在 bash 啟動虛擬環境後，輸入 `uvicorn main:app --reload`
       * main：儲存創建 app 的 python 檔名，EX：main.py
       * app：創建 api 的對象，EX：app = FastAPI()
-      * --reload：讓 server 在更新程式內容後重新啟動，適用於開發階段
+      * --reload：讓 server 在更新程式內容並**儲存**後會重新載入，適用於開發階段
+      * 若 main 在 Code 這個資料夾下，可以下 `unicorn Code.main:app --reload`
 3. 在本機提供的 URL 做查看
    網址|內容
    ----|----
@@ -59,4 +60,5 @@ PATCH|對資源進行部分修改
 
 ## 補充說明
 * [fastapi official site](https://fastapi.tiangolo.com/)
+* [uvicorn official site](https://www.uvicorn.org/)
 * [淺談 Coroutine 協程使用方法（含 async function 示例）](https://www.maxlist.xyz/2020/03/29/python-coroutine/)
