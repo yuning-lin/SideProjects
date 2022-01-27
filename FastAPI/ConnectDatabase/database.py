@@ -1,0 +1,14 @@
+'''
+Created on 2022年1月18日
+
+@author: Ning_Lin
+'''
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+db_url = 'sqlite:///./health_tracking.db'
+
+engine = create_engine(db_url, connect_args={'check_same_thread':False})
+SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
+Base = declarative_base()
