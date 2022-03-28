@@ -28,3 +28,14 @@ scheduler.bat|工作排程執行檔
   ```
 1. 有可能為網頁尚未加載完全就取網頁元素導致
 2. 建議可以加入 `time.sleep(3)`
+
+### 常見 Error 3
+  ```python
+  [16068:2596:0328/093602.183:ERROR:device_event_log_impl.cc(214)] [09:36:02.184] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+  ```
+1. [相關討論](https://stackoverflow.com/questions/61561112/how-to-solve-getting-default-adapter-failed-error-when-launching-chrome-and-tr)
+2. 加入以下程式碼，可以解決
+      ```python
+      options = webdriver.ChromeOptions() 
+      options.add_experimental_option("excludeSwitches", ["enable-logging"])
+      ```
