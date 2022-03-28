@@ -12,7 +12,9 @@ from get_chalendar import workday_flag
 
 class FillOutRobot():
     def OpenChrome(self):
-        self.driver = webdriver.Chrome(executable_path = conf.chrome_path)
+        options = webdriver.ChromeOptions() 
+        options.add_experimental_option("excludeSwitches", ["enable-logging"])
+        self.driver = webdriver.Chrome(options=options, executable_path = conf.chrome_path)
 
 
     def LogIn(self):
