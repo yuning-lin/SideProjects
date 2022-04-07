@@ -7,13 +7,14 @@
 * HTTP（based on TCP） + SSL/TLS = HTTPS
 
 ## 使用套件
-名稱｜用途
-----|----
-socket|搭建典型的 TCP 或 UDP 等通訊程式，進行傳遞及接收訊息的功能
-flask|創建輕量化 api 模組
-flask_restful |
-flask_cors|處理跨域資源共享 Cross Origin Resource Sharing (CORS)
-cryptography|要使用臨時憑證 ad-hoc certificates 需要的套件
+  
+|名稱|用途|
+|----|----|
+|socket|搭建典型的 TCP 或 UDP 等通訊程式，進行傳遞及接收訊息的功能|
+|flask|用 `@wrap` 創建輕量化 api 模組|
+|flask_restful|用 `add_resource` 方式創建輕量化 api 模組|
+|flask_cors|處理跨域資源共享 Cross Origin Resource Sharing (CORS)|
+|cryptography|要使用臨時憑證 ad-hoc certificates 需要的套件|
 
 
 ### 關於 socket 套件
