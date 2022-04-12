@@ -24,13 +24,13 @@
 |爬取[台灣電子地圖服務網](https://www.map.com.tw/)|免費，但需要精準地址，否則容易出錯|
 |爬取[全國門牌地址定位服務](https://tgos.nat.gov.tw/TGOS/Web/Address/TGOS_Address.aspx)|免費，可以不用精準地址，但會回吐多個精準地址|
   
-EX：同樣查詢「新竹縣竹北市新瀧五街口」
+**EX：同樣查詢「新竹縣竹北市新瀧五街口」**
 * 台灣電子地圖服務網：將其定位到「新竹縣竹北市公所」
+  
+![](https://github.com/yuning-lin/SideProjects/blob/main/GoogleMapAPI/Pictures/map_com_tw.PNG)
 * 全國門牌地址定位服務：回吐多個詳細地址，由於應用只會有某某街口，故都取第一個地址代替
-
-參考資料：
-* [批量處理地址轉換經緯度](https://medium.com/%E8%8A%B1%E5%93%A5%E7%9A%84%E5%A5%87%E5%B9%BB%E6%97%85%E7%A8%8B/geocoding-%E6%89%B9%E9%87%8F%E8%99%95%E7%90%86%E5%9C%B0%E5%9D%80%E8%BD%89%E6%8F%9B%E7%B6%93%E7%B7%AF%E5%BA%A6-721ab2564c88)
-* [留言區：TWD97坐標轉換](http://fyyang.blogspot.com/2012/09/python-twd97.html)
+  
+![](https://github.com/yuning-lin/SideProjects/blob/main/GoogleMapAPI/Pictures/tgos_map.PNG)
 
 ## 所需套件
 |名稱|用途|
@@ -43,12 +43,16 @@ EX：同樣查詢「新竹縣竹北市新瀧五街口」
 |selenium|用於爬蟲|
 |pyproj|用於 TWD97 和 WGS84 互相轉換|
 
-## 程式內容
+## 檔案內容
 |檔名|內容|
 |----|----|
 |config.py|置放路徑、參數|
 |collect_data.py|收集模糊地址的經緯度|
 |calculate_distance.py|利用爬蟲 google map 計算行車距離|
 |GoogleMapsDistanceMatrixAPI.md|Google Maps Distance Matrix API 計算行車距離|
+|requirements.txt|所需套件名稱|
+|raw_data.xlsx|原始資料示範檔案|
 
-
+## 參考資料：
+* [批量處理地址轉換經緯度](https://medium.com/%E8%8A%B1%E5%93%A5%E7%9A%84%E5%A5%87%E5%B9%BB%E6%97%85%E7%A8%8B/geocoding-%E6%89%B9%E9%87%8F%E8%99%95%E7%90%86%E5%9C%B0%E5%9D%80%E8%BD%89%E6%8F%9B%E7%B6%93%E7%B7%AF%E5%BA%A6-721ab2564c88)
+* [留言區：TWD97坐標轉換](http://fyyang.blogspot.com/2012/09/python-twd97.html)
