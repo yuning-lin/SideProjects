@@ -1,4 +1,6 @@
 ## 計算路徑規劃方法
+|方法|優缺點|
+|----|----|
 |爬取[台灣電子地圖服務網](https://www.map.com.tw/)|免費，但導航分析的功能無法使用|
 |爬取[全國門牌地址定位服務](https://tgos.nat.gov.tw/TGOS/Web/Address/TGOS_Address.aspx)|免費，但路徑規劃功能無法使用|
 |爬取 google map 資訊|免費，但有筆數限制、且單點對多點的距離計算有限，對於`鄰`會有查詢不到的情形|
@@ -8,11 +10,17 @@
 1. [前往 Google Cloud Platform](https://console.cloud.google.com/apis/dashboard?project=_)
 2. 建立專案
 3. 前往搜尋列中輸入「Distance Matrix API」
+  
+![](https://github.com/yuning-lin/SideProjects/blob/main/GoogleMapAPI/Pictures/gcp_search.PNG)
 4. 點選啟用 > 點選欲啟用的專案
-5. 點選左列`憑證` > ＋建立憑證 > API 金鑰
-注：必須 enable [繳費功能](https://console.cloud.google.com/project/_/billing/enable)
+  
+![](https://github.com/yuning-lin/SideProjects/blob/main/GoogleMapAPI/Pictures/gcp_search_result.PNG)
+6. 點選左列`憑證` > ＋建立憑證 > API 金鑰
+  
+![](https://github.com/yuning-lin/SideProjects/blob/main/GoogleMapAPI/Pictures/gcp_get_auth.PNG)
+注：必須 enable [繳費功能](https://console.cloud.google.com/project/_/billing/enable)才能使用
 
-## 計算雷達搜尋
+## 雷達搜尋
 ```python
 latlon = (緯度, 經度)
 radius = 25000
