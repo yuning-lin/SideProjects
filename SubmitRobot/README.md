@@ -39,3 +39,31 @@ scheduler.bat|工作排程執行檔
       options = webdriver.ChromeOptions() 
       options.add_experimental_option("excludeSwitches", ["enable-logging"])
       ```
+### 常見 Error 4
+  ```python
+  selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 99 Current browser version is 102.0.5005.115 with binary
+  ```
+ 1. 由於 browser 常會自動更新，此時就會跟下載的 chromedriver 版本不同
+ 2. 故[此套件](https://pypi.org/project/webdriver-manager/)會取得和 browser 相符的 chromedriver
+ 3. `pip install webdriver-manager` 
+ 4. 原程式碼（上）改成會自動更新 chromedriver 的程式碼（下）
+      ```python
+      from selenium import webdriver
+      driver = webdriver.Chrome(executable_path = conf.chrome_path)
+      ```
+      ```python
+      from selenium import webdriver
+      from webdriver_manager.chrome import ChromeDriverManager
+      driver = webdriver.Chrome(ChromeDriverManager(path=conf.chrome_path).install())
+      ```
+ ### 常見 Error 5
+  ```python
+  webdriver.Chrome(ChromeDriverManager(path).install()) TypeError: __init__() got multiple values for argument 'executable_path'
+  ```
+  1.  `executable_path = conf.chrome_path`、`ChromeDriverManager(path=conf.chrome_path).install()` 不能同時出現
+  2.  解法如上方所示
+      ```python
+      from selenium import webdriver
+      from webdriver_manager.chrome import ChromeDriverManager
+      driver = webdriver.Chrome(ChromeDriverManager(path=conf.chrome_path).install())
+      ```
