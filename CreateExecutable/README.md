@@ -32,6 +32,9 @@
     * 於 CMD ：`pyinstaller -D main.py` > 在 dist 下打包成一個檔案，因為單一檔案要包山包海，執行時間較久，適合小型專案
     * 於 CMD ：`pyinstaller -F main.py` > 在 dist 下打包成一個資料夾，會有其他用到的檔案一放置於資料夾中，執行時間較快
     * `pyinstaller -F main.py` 打包後架構如下
+         * 儲存一些設定的檔案：main.spec
+         * 儲存 log 與工作檔案：build/
+         * 儲存 .exe 與套件檔案：dist/
     ```
     project
     │   README.md
@@ -67,3 +70,10 @@
     * 於 CMD：cd 至資料夾 dist/main 下，鍵入 main.exe，觀察運行情況
     * 再直接至資料夾 dist/main 下，點兩下 main.exe 觀察是否執行成功
 6. 最後將 main 這個 folder 壓縮傳送給使用者即可
+
+## 參考資源
+* [pyinstaller official site](https://pyinstaller.org/en/stable/operating-mode.html)
+* [How to Create a Single Windows Executable from a Python and PyGame Project (Summary)](https://irwinkwan.com/2013/04/29/python-executables-pyinstaller-and-a-48-hour-game-design-compo/)
+* [Easy Steps to Create an Executable in Python Using PyInstaller](https://medium.com/swlh/easy-steps-to-create-an-executable-in-python-using-pyinstaller-cc48393bcc64)
+* [使用PyInstaller將Python檔案打包成執行檔(executable)](https://yunchipang.github.io/create-exe-from-python-script-using-pyinstaller.html)
+* [Python3中採用PyInstaller打包工程專案](https://wellbay.cc/thread-1069834.htm)
