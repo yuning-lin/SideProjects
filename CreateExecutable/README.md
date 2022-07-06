@@ -1,15 +1,24 @@
-## 情境
+## 使用情境
 如何快速讓沒有安裝 python 的電腦應用寫好的功能？  
+以下套件安裝、執行步驟皆以 **Windows** 為例
 
-## 套件 
+## 套件安裝 
 * `pip install auto-py-to-exe`：使用 GUI 的畫面操作 pyinstaller 打包專案成 .exe
 * `pip install pyinstaller`：使用指令操作 pyinstaller 打包專案成 .exe
-* 可以使用 `auto-py-to-exe --version`、`pyinstaller --version` 檢查是否安裝成功
+* `pip install nuitka`：將 python 轉換成 C 語言並打包專案成 .exe，免除反編譯，運行速度較 pyinstaller 快
+* 可以使用 `套件名稱 --version` 檢查是否安裝成功
+* 注意：
+   * 以上的套件在不同系統都是可以使用的
+   * 但打包好的執行檔無法跨系統使用
+   * EX：在 Mac 上打包僅能給 Mac 使用、Windows 上打包僅能給 Windows 使用
+   * [跨系統打包程式]()
 
-## 步驟
+
+## 執行步驟
 1. 建立專案虛擬環境並完成專案程式邏輯
-2. WINDOWS 使用者：於 CMD、POWER SHELL 激活該專案虛擬環境
+2. 於指定終端機激活該專案虛擬環境
     * 於 CMD：`env_test\Scripts\activate`
+    * 為何指定終端機，因與背後運行的系統有關，故建議使用 CMD、POWER SHELL
     * 因為 pyinstaller 會將使用到的套件也做打包，所以建議建立乾淨的虛擬環境
 3. 以專案架構舉例：
     * 打包時僅需使用 main.py 即可，即使 main.py 會呼叫 func1.py、func2.py
@@ -77,3 +86,4 @@
 * [Easy Steps to Create an Executable in Python Using PyInstaller](https://medium.com/swlh/easy-steps-to-create-an-executable-in-python-using-pyinstaller-cc48393bcc64)
 * [使用PyInstaller將Python檔案打包成執行檔(executable)](https://yunchipang.github.io/create-exe-from-python-script-using-pyinstaller.html)
 * [Python3中採用PyInstaller打包工程專案](https://wellbay.cc/thread-1069834.htm)
+* [Python打包exe的王炸-Nuitka](https://zhuanlan.zhihu.com/p/133303836)
