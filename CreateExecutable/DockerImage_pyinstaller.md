@@ -13,6 +13,7 @@
     * 將專案下所有互相呼叫的 .py 以及執行 pyinstaller 產生的 .spec 也複製於此資料夾下
     * 故 `src` 下會有 requirements.txt、.py、.spec 三種檔案
 4. 於 CMD：`docker run -v "$(pwd):/src/" cdrx/pyinstaller-linux` 將 .py 打包成 Mac 使用的執行檔
+    * 注：若是要在 Mac 打包給 Windows 使用，於終端機：`docker run -v "$(pwd):/src/" cdrx/pyinstaller-windows`
 
 ## 參考來源
 * [PyInstaller Docker Images](https://github.com/cdrx/docker-pyinstaller)
