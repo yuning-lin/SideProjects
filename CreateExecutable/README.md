@@ -82,6 +82,7 @@
 
 ## 參考資源
 * [pyinstaller official site](https://pyinstaller.org/en/stable/operating-mode.html)
+* [pyinstaller ](https://buildmedia.readthedocs.org/media/pdf/pyinstaller/latest/pyinstaller.pdf)
 * [How to Create a Single Windows Executable from a Python and PyGame Project (Summary)](https://irwinkwan.com/2013/04/29/python-executables-pyinstaller-and-a-48-hour-game-design-compo/)
 * [Easy Steps to Create an Executable in Python Using PyInstaller](https://medium.com/swlh/easy-steps-to-create-an-executable-in-python-using-pyinstaller-cc48393bcc64)
 * [使用PyInstaller將Python檔案打包成執行檔(executable)](https://yunchipang.github.io/create-exe-from-python-script-using-pyinstaller.html)
