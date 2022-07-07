@@ -12,8 +12,17 @@
     * `pip freeze > requirements.txt` 把該專案套件存成 .txt 後續會根據此文件做打包
     * 將專案下所有互相呼叫的 .py 以及執行 pyinstaller 產生的 .spec 也複製於此資料夾下
     * 故 `src` 下會有 requirements.txt、.py、.spec 三種檔案
-4. 於 CMD：`docker run -v "$(pwd):/src/" cdrx/pyinstaller-linux` 將 .py 打包成 Mac 使用的執行檔
-    * 注：若是要在 Mac 打包給 Windows 使用，於終端機：`docker run -v "$(pwd):/src/" cdrx/pyinstaller-windows`
+4. 跨平台打包執行檔
+    * 在 Windows 將 .py 打包成 Mac 使用的執行檔，於 CMD：`docker run -v "%cd%:/src/" cdrx/pyinstaller-linux` 
+    * 在 Mac 將 .py 打包成 Windows 使用的執行檔，於終端機：`docker run -v "$(pwd):/src/" cdrx/pyinstaller-windows`
+
+## 注意事項
+* 要注意 Pillow 的版本需與 docker image 裡的 python 做對應
+* 實驗成功版本：Pillow==8.0.0 vs python3.7.5
+```
+ERROR: Command errored out with exit status 1:
+     command: /root/.pyenv/versions/3.7.5/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-t2wszcxj/Pillow/setup.py'"'"'; __file__='"'"'/tmp/pip-install-t2wszcxj/Pillow/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-bg8rat85/install-record.txt --single-version-externally-managed --compile
+```
 
 ## 參考來源
 * [PyInstaller Docker Images](https://github.com/cdrx/docker-pyinstaller)
