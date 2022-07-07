@@ -19,6 +19,7 @@
 ## 注意事項
 * 要注意 Pillow 的版本需與 docker image 裡的 python 做對應
 * 實驗成功版本：Pillow==8.0.0 vs python3.7.5
+* [Pillow 官方網站](https://pillow.readthedocs.io/en/stable/installation.html)
 ```
 ERROR: Command errored out with exit status 1:
      command: /root/.pyenv/versions/3.7.5/bin/python3.7 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-t2wszcxj/Pillow/setup.py'"'"'; __file__='"'"'/tmp/pip-install-t2wszcxj/Pillow/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-bg8rat85/install-record.txt --single-version-externally-managed --compile
