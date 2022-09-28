@@ -67,3 +67,13 @@ scheduler.bat|工作排程執行檔
       from webdriver_manager.chrome import ChromeDriverManager
       driver = webdriver.Chrome(ChromeDriverManager(path=conf.chrome_path).install())
       ```
+### 常見 Error 6
+  ```python
+  FileNotFoundError: [WinError 3] 系統找不到指定的路徑。: 'C:\your_path\chromedriver.exe\\.wdm'
+  ```
+  解法：
+  ```python
+  from selenium.webdriver.chrome.service import Service
+  from webdriver_manager.chrome import ChromeDriverManager
+  driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+  ```
