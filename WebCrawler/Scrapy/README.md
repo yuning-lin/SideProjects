@@ -7,7 +7,11 @@
   Microsoft Visual C++ 14.0 is required
   ```
   * Solution：[Visual Studio 官方下載區](https://visualstudio.microsoft.com/downloads/) > 下載「Microsoft Build Tools 20XX」
-  
+* Error：
+  ```
+  AttributeError: module 'OpenSSL.SSL' has no attribute 'SSLv3_METHOD'
+  ```
+  * Solution：`pip install pyOpenSSL==22.0.0` 
 
 ## scrapy 終端機語法
 語法|意義|範例
