@@ -20,11 +20,14 @@
 `scrapy startproject your_project_name .`|建置 scrapy 專案於當前目錄下，並命名為 your_project_name|`scrapy startproject crawler .`
 `scrapy genspider 爬蟲.py名稱 目標網站網域名稱`|建立目標網站爬蟲檔案|`scrapy genspider lottery www.taiwanlottery.com.tw`
 `scrapy crawl 爬蟲.py名稱`|爬取目標網站|`scrapy crawl lottery`
+`scrapy crawl 爬蟲.py名稱 -o 輸出檔案名稱`|輸出爬取內容並命名，附檔可為 json,csv,xml|`scrapy crawl lottery -o result.json`
+
 
 ## 檔案架構
 ```
 project
 │   scrapy.cfg（scrapy 專案部署設定檔）
+│
 └───crawler
     │   __init__.py
     │   items.py（定義欲爬取或儲存的資料欄位）
@@ -46,3 +49,4 @@ project
 * [Blog：Scrapy爬蟲與資料處理30天筆記](https://ithelp.ithome.com.tw/users/20107514/ironman/1919)
 * [Blog：scrapy數據解析 | xpath | CSS | re](https://blog.csdn.net/Heart_for_Ling/article/details/103590220)
 * [Blog：Scrapy中XPath選擇器的基本用法](https://blog.csdn.net/qq_27283619/article/details/88704479)
+* [stackoverflow：scrapyscript](https://stackoverflow.com/questions/40237952/get-scrapy-crawler-output-results-in-script-file-function)
