@@ -24,9 +24,13 @@
 
 
 ## 檔案架構
+此專案爬蟲運行方式有二：
+1. 在終端機：激活虛擬環境 ＞ cd 到 project 下 > `scrapy crawl lottery -o result.json`
+2. 在終端機或 IDE 直接跑 main.py
 ```
 project
 │   scrapy.cfg（scrapy 專案部署設定檔）
+│   main.py（執行主檔）
 │
 └───crawler
     │   __init__.py
