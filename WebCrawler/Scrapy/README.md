@@ -44,6 +44,7 @@ project
 * [Docs：Scrapy](https://docs.scrapy.org/en/latest/index.html)
 * [Docs：Scrapy Documentation 2017](https://docs.scrapy.org/_/downloads/en/xpath-tutorial/pdf/)
 * [GitHub：Scrapy with selenium](https://github.com/clemfromspace/scrapy-selenium)
+* [GitHub：Scrapyscript](https://github.com/jschnurr/scrapyscript)
 * [Blog：Scrapy教學系列](https://www.learncodewithmike.com/search/label/Scrapy%E6%95%99%E5%AD%B8%E7%B3%BB%E5%88%97)
 * [Blog：Scrapy + Python 3: PTT 資料抓取與分析](https://jasonblog.github.io/note/python/scrapy_+_python_3_ptt_zi_liao_zhua_qu_yu_fen_xi.html)
 * [Blog：Scrapy爬蟲與資料處理30天筆記](https://ithelp.ithome.com.tw/users/20107514/ironman/1919)
