@@ -32,3 +32,5 @@ google 有提供眾多功能的 API
 * 根據應用安裝相關套件：`pip install googlemaps`
 * Google Maps API key
 
+## 參考資源
+* [Python Client for Google Maps Services](https://github.com/googlemaps/google-maps-services-python)：Google Maps 相關 API
