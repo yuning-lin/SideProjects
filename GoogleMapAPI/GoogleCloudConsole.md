@@ -15,7 +15,7 @@ google 有提供眾多功能的 API
       
     ![](https://github.com/yuning-lin/SideProjects/blob/main/GoogleMapAPI/Pictures/google_api_activate.PNG)  
       
-5. 點選取消建立付費帳戶
+5. 點選建立付費帳戶（必須有信用卡資訊才能使用）
       
     ![](https://github.com/yuning-lin/SideProjects/blob/main/GoogleMapAPI/Pictures/google_api_charge.PNG)  
       
