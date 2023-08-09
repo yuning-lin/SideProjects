@@ -24,3 +24,4 @@ ANTLR（ANother Tool for Language Recognition）使用規則來描述程式語�
 * [GitHub：grammars-v4](https://github.com/antlr/grammars-v4/tree/master)
 * [The ANTLR Mega Tutorial](https://tomassetti.me/antlr-mega-tutorial/)
 * [Python：antlr4-python3-runtime](https://pypi.org/project/antlr4-python3-runtime/)
+* [Blog：Build an API Query Language with ANTLR in Python](https://medium.com/@ab.rhmn97/build-an-api-query-language-with-antlr-in-python-7313dba222e7)
