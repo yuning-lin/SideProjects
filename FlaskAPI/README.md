@@ -43,9 +43,44 @@
     * GET：`curl http://127.0.0.1:5000/api/get_request/`
     * POST：`curl -X POST -H "Content-Type: application/json" -d '{"param1": "value1", "param2": "value2"}' http://127.0.0.1:5000/api/post_request/`
 * python
-```python
+    * GET：
+	```python
+	import requests
+	
+	# 發送 GET 請求
+	url = 'http://127.0.0.1:5000/api/get_request/'
+	response = requests.get(url)
+	
+	# 檢查狀態
+	if response.status_code == 200:
+	    # 解析 response
+	    data = response.json()
+	    print(data)
+	else:
+	    print('GET request failed with status code:', response.status_code)
+	
+	```
+    * POST：
+	```python
+	import requests
+	
+	# POST 請求的參數
+	params = {'param1': 'value1', 'param2': 'value2'}
+	
+	# 發送 POST 請求
+	url = 'http://127.0.0.1:5000/api/post_request/'
+	response = requests.post(url, json=params)
+	
+	# 檢查狀態
+	if response.status_code == 200:
+	    # 解析 response
+	    data = response.json()
+	    print(data)
+	else:
+	    print('POST request failed with status code:', response.status_code)
+	```
 
-```
+
 
 ## 參考資源
 * [python socket 講解](https://shengyu7697.github.io/python-socket/)
