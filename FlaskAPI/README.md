@@ -38,6 +38,15 @@
 |requirements.txt|使用套件及對應版本|
 
 
+## Call API
+* bash
+    * GET：`curl http://127.0.0.1:5000/api/get_request/`
+    * POST：`curl -X POST -H "Content-Type: application/json" -d '{"param1": "value1", "param2": "value2"}' http://127.0.0.1:5000/api/post_request/`
+* python
+```python
+
+```
+
 ## 參考資源
 * [python socket 講解](https://shengyu7697.github.io/python-socket/)
 * [postman 教學](https://www.wrpypl.com/postman.html)
