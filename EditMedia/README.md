@@ -33,14 +33,10 @@ new_video.write_videofile(output_video_path, codec='libx264', audio_codec='aac',
 * 組合影片
 ```python
 from moviepy.editor import VideoFileClip, concatenate_videoclips
-# 獲取第一個剪輯的分辨率和幀率
+
+new_video_path = "...\\YYYY.mp4"
 video_lst = [VideoFileClip(v, audio_fps=44100) for v in video_path_lst]
-target_size = video_lst[0].size
-fps = video_lst[0].fps
-# 調整所有剪輯的分辨率和幀率
-top_page = top_page.set_fps(fps).resize(target_size)
-clips = [top_page] + video_lst
-combined_video = concatenate_videoclips(clips)
+combined_video = concatenate_videoclips(video_lst)
 combined_video.write_videofile(new_video_path, codec='libx264', audio_codec='aac',
                                threads=os.cpu_count() * 2, preset="fast")
 
