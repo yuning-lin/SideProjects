@@ -14,10 +14,12 @@ change_settings({"IMAGEMAGICK_BINARY": r"C:\\Program Files\\ImageMagick-7.1.1-Q1
 * 影片插入圖片
 ```python
 from moviepy.editor import VideoFileClip, ImageClip, CompositeVideoClip
+
 picture_path = "...\\XXXX.png"
 input_video_path = "...\\XXXX.mp4"
 output_video_path = "...\\YYYY.mp4"
 fade_duration = 2
+
 video = VideoFileClip(input_video_path, audio_fps=44100)
 # 讀取要插入左邊中間的圖片，並調整大小以適應影片的高度的一部分
 picture_image = ImageClip(picture_path).set_duration(video.duration)
